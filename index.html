@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Technical Documentation Page</title>
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="tdstyle.css">
+
+</head>
+<body>
+	<nav id="navbar">
+		<header class="header-nav">C++ Cocumentation</header>
+		<ul>
+			<li>
+				<a class="nav-link" href="#Introduction">Introduction</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#C_and_C++">C and C++</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Compilers_and_IDE">Compilers and IDE</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Getting_Started">Getting Started</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Syntax_and_Hello_World">Syntax and Hello World</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Variables_and_Constants">Variables and Constants</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Data_Types">Data Types</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Keywords_and_Identifiers">Keywords and Identifiers</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Conditional_Statements_and_Operators">Conditional Statements and Operators</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Loop">Loop</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Functions">Functions</a>
+			</li>
+
+			<li>
+				<a class="nav-link" href="#Reference">Reference</a>
+			</li>
+		</ul>
+	</nav>
+
+
+
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header><h2>Introduction</h2></header>
+			<article>
+				<p>C++ is a cross-platform language that can be used to create high-performance applications.
+				It was developed by Bjarne Stroustrup, as an extension to the C language.
+				C++ gives programmers a high level of control over system resources and memory.
+				The language was updated 3 major times in 2011, 2014, and 2017 and known as C++11, C++14, and C++17 respectively.
+				</p>
+				<p>
+				C++ is one of the world's most popular programming languages.
+				It can be found in today's operating systems, Graphical User Interfaces, and embedded systems.
+				C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.
+				It is also portable and can be used to develop applications that can be adapted to multiple platforms.
+				</p>
+
+				<h3>Advantages of C++</h3>
+				<p>C++ excels in situations where high performance and precise control over memory and other resources is needed. Here are a few common types of applications that most likely would be written in C++:</p>
+
+				<ul>
+					<li>
+						Video games
+					</li>
+
+					<li>
+						Real-time systems (e.g. for transportation, manufacturing, etc…)
+					</li>
+					<li>
+						High-performance financial applications (e.g. high frequency trading)
+					</li>
+					<li>
+						Graphical applications and simulations
+					</li>
+					<li>
+						Productivity / office applications
+					</li>
+					<li>
+						Embedded software
+					</li>
+					<li>
+						Audio and video processing
+					</li>
+				</ul>
+			</article>
+		</section>
+		
+
+
+		<section class="main-section" id="C_and_C++">
+			<header><h2>C and C++</h2></header>
+			<article>
+				<h3>The language C</h3>
+				<p>The C language was developed in 1972 by Dennis Ritchie at Bell Telephone laboratories, primarily as a systems programming language (a language to write operating systems with). Ritchie’s primary goals were to produce a minimalistic language that was easy to compile, allowed efficient access to memory, produced efficient code, and was self-contained (not reliant on other programs). For a high-level language, it was designed to give the programmer a lot of control, while still encouraging platform (hardware and operating system) independence (that is, the code didn’t have to be rewritten for each platform).
+				</p>
+
+				<h3>The language C++</h3>
+				<p>
+					C++ (pronounced see plus plus) was developed by Bjarne Stroustrup at Bell Labs as an extension to C, starting in 1979. C++ adds many new features to the C language, and is perhaps best thought of as a superset of C, though this is not strictly true (as C99 introduced a few features that do not exist in C++). C++’s claim to fame results primarily from the fact that it is an object-oriented language
+				</p>
+			</article>
+		</section>
+
+
+		<section class="main-section" id="Compilers_and_IDE">
+			<header><h2>Compilers and IDE</h2></header>
+			<article>
+				<h3>What is a Compiler?</h3>
+				<p>The computers only understands the language of Binary i.e the the language using only 1 and 0. Which is called as the Machine Language. Programming in a Machine Language can be very difficult, time consuming and error prone. To make programming easier High level languages are introduced. They made easier for programmers to write and read each other's programs easier.
+				</p>
+
+				<p>So to Explain in brief,
+				A Compiler is a program or a tool that converts other program codes written in High-Level language into Machine Language</p>
+
+				<h3>IDE</h3>
+				<p>The term IDE stands for Integrated Development Environment. It is a software which is a collection of all the necessary tools required to develop a software, such as Text Editors,Compilers,Debuggers,Interpretters,Assemblers etc.
+				</p>
+			</article>
+		</section>
+
+		<section class="main-section" id="Getting_Started">
+			<header><h2>Getting Started</h2></header>
+			<article>
+				<h3>Coding in C++</h3>
+				<p>To start using C++, you need two things:</p>
+				<ul>
+					<li>
+					A text editor, like Notepad, to write C++ code
+					</li>
+					<li>
+					A compiler, like GCC, to translate the C++ code into a language that the computer will understand
+					</li>
+				</ul>
+				<p>There are many text editors and compilers to choose from. However using an IDE for coding is a most common practice for beginners. Popular IDE's include:
+				</p>
+				<ul>
+					<li>Visual Studio (For Windows)</li>
+					<li>Code::Blocks (For bothe Windows and Linux)</li>
+					<li>Eclipse (For bothe Windows, Linux and Mac OSX)</li>
+					<li>Xcode (For Mac OSX)</li>
+				 </ul>
+			</article>
+		</section>
+
+
+		<section class="main-section" id="Syntax_and_Hello_World">
+			<header><h2>Syntax and Hello World</h2></header>
+			<article>
+				<p>
+					Syntax is the structure of the program.
+				</p>
+				<code>
+					// Hello World C++ Program
+					<span class="sp5">#include</span> &lt;iostream&gt;
+
+					<span class="sp4">int</span> <span class="sp6">main()</span>
+					{
+						std::cout&lt;&lt;"Hello World!";
+					}
+				</code>
+    			
+    			<p>The Output of the above program will be</p>
+    			
+    			<code class="output1">Hello World!</code>
+
+    			<h3>Let's examine this program line by line:</h3>
+    			<ul>
+    				<li><strong>Line 1:</strong><span>// Hello World C++ Program</span>Two slash signs indicate that the rest of the line is a comment inserted by the programmer but which has no effect on the behavior of the program. Programmers use them to include short explanations or observations concerning the code or program. In this case, it is a brief introductory description of the program.
+    				</li>
+
+    				<li><strong>Line 2:</strong><span>#include &lt;iostream&gt;</span>Lines beginning with a hash sign (<span>#</span>) are directives read and interpreted by what is known as the preprocessor. They are special lines interpreted before the compilation of the program itself begins. In this case, the directive <span>#include &lt;iostream&gt;</span>, instructs the preprocessor to include a section of standard C++ code, known as header iostream, that allows to perform standard input and output operations, such as writing the output of this program (<span>Hello World</span>) to the screen.
+    				</li>
+
+    				<li><strong>Line 3:</strong> <span>A blank line.</span>Blank lines have no effect on a program. They simply improve readability of the code.
+    				</li>
+
+    				<li><strong>Line 4:</strong><span> int main ()</span>This line initiates the declaration of a function. Essentially, a function is a group of code statements which are given a name: in this case, this gives the name "<span>main</span>" to the group of code statements that follow. Functions will be discussed in detail in a later chapter, but essentially, their definition is introduced with a succession of a type (<span>int</span>), a name (<span>main</span>) and a pair of parentheses (<span>()</span>), optionally including parameters.
+    				</li>
+
+    				<li>The function named <span>main</span> is a special function in all C++ programs; it is the function called when the program is run. The execution of all C++ programs begins with the main function, regardless of where the function is actually located within the code.
+    				</li>
+
+    				<li><strong>Lines 5 and 7:</strong><span> {</span> and <span>} </span>The open brace (<span>{</span>) at line 5 indicates the beginning of main's function definition, and the closing brace (<span>}</span>) at line 7, indicates its end. Everything between these braces is the function's body that defines what happens when main is called. All functions use braces to indicate the beginning and end of their definitions.
+    				</li>
+
+    				<li><strong>Line 6:</strong><span> std::cout &lt;&lt; "Hello World!";</span>This line is a C++ statement. A statement is an expression that can actually produce some effect. It is the meat of a program, specifying its actual behavior. Statements are executed in the same order that they appear within a function's body.
+    				</li>
+
+    				<li>This statement has three parts: First, <span>std::cout</span>, which identifies the standard character output device (usually, this is the computer screen). Second, the insertion operator (<span>&lt;&lt;</span>), which indicates that what follows is inserted into <span>std::cout</span>. Finally, a sentence within quotes (<span>"Hello world!"</span>), is the content inserted into the standard output.
+    				</li>
+
+    				<li>Notice that the statement ends with a semicolon (<span>;</span>). This character marks the end of the statement, just as the period ends a sentence in English. All C++ statements must end with a semicolon character. One of the most common syntax errors in C++ is forgetting to end a statement with a semicolon.
+    				</li>
+
+    				<li>You may have noticed that not all the lines of this program perform actions when the code is executed. There is a line containing a comment (beginning with <span>//</span>). There is a line with a directive for the preprocessor (beginning with <span>#</span>). There is a line that defines a function (in this case, the main function). And, finally, a line with a statements ending with a semicolon (the insertion into cout), which was within the block delimited by the braces ( <span>{ }</span> ) of the main function.
+    				</li>
+
+    				<li>The program has been structured in different lines and properly indented, in order to make it easier to understand for the humans reading it. But C++ does not have strict rules on indentation or on how to split instructions in different lines. For example, instead of:
+    				</li>
+    			</ul>
+
+    			<code>
+    				<span class="sp4">int</span> <span class="sp6">main ()</span>
+    				{
+    					std::cout &lt;&lt; " Hello World!";
+    				}
+    			</code>
+
+    			<p>We could have written as: </p>
+
+    			<code>
+    				<span class="sp4">int</span> <span class="sp6">main ()</span>{std::cout &lt;&lt; " Hello World!";}
+    			</code>
+
+    			<p>all in a single line, and this would have had exactly the same meaning as the preceding code.In C++, the separation between statements is specified with an ending semicolon (<span>;</span>), with the separation into different lines not mattering at all for this purpose. Many statements can be written in a single line, or each statement can be in its own line. The division of code in different lines serves only to make it more legible and schematic for the humans that may read it, but has no effect on the actual behavior of the program.
+    			</p>
+   			</article>
+		</section>
+
+		<section class="main-section" id="Variables_and_Constants">
+    		<header><h2>Variables and Constants</h2></header>
+    		<article>
+    			<h3>Variable</h3>
+    				<p>Variables are containers or memory locations which are used for storing data values. In C++,there are different types of variables (defined with different keywords), for example: <span>int</span> - stores integers (whole numbers), without decimals, such as <span>123</span> or <span>-123</span>
+    				</p>
+
+    				<h3>Constants</h3>
+    				<p>A constant, like a variable, is a memory location where a value can be stored. Unlike variables, constants never change in value</p>
+
+
+    				<h3>Variable Declaration and Definition</h3>
+
+    				<ul>
+    					<li>
+    					The variable declaration means introducing the variable before its first use.
+    					</li>
+
+    					<li>
+    					A variable definition is a part where the variable is assigned a memory location and a value.
+    					</li>
+    				</ul>
+    				<p>Most of the times, variable declaration and definition are done together.</p>
+   			</article>
+		</section>
+
+
+
+
+		<section class="main-section" id="Data_Types">
+    		<header><h2>Data Types</h2></header>
+    		<article>
+    		<h3>What is Data type?</h3>
+    		<p>Data type or simply type is an attribute of data which tells the compiler or interpreter how the programmer intends to use the data.This data type defines the operations that can be done on the data, the meaning of the data, and the way values of that type can be stored
+    		</p>
+
+
+    		<ul>
+    			<li>
+    				<strong>int</strong> - They use 4 bytes memory size, Stores whole numbers, without decimals
+    			</li>
+
+    			<li>
+    				<strong>float</strong> - They use 4 bytes memory size, Stores fractional numbers, containing one or more decimals. Sufficient for storing 7 decimal digits
+    			</li>
+
+    			<li>
+    				<strong>double</strong> 	They use 8 bytes memory size, Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits
+    			</li>
+
+    			<li>
+    				<strong>boolean</strong> They use 1 byte memory size, 	Stores true or false values
+    			</li>
+
+    			<li>
+    				<strong>char</strong>  They use 1 byte memory size, Stores a single character/letter/number, or ASCII values
+    			</li>
+    		</ul>
+   		</article>
+	</section>
+
+	<section class="main-section" id="Keywords_and_Identifiers">
+    	<header><h2>Keywords and Identifiers</h2></header>
+    	<article>
+    		<h3>Keywords</h3>
+    		<p>Keywords are specific reserved words in C++, each of which has a specific feature associated with it.
+    		</p>
+
+    		<h3>Identifiers</h3>
+    		<p>
+    		Identifiers are user defined names for naming of variables, functions and arrays. These usually consists of long sequence of letters and digits with either a letter or the underscore(<span>_</span>) as a first character.
+    		</p>
+
+    		<p>
+    		Identifier names must differ in spelling and case from any keywords. You cannot use keywords as identifiers. They are reserved for special use. Once declared, you can use the identifier in later program statements to refer to the associated value. A special kind of identifier, called a <span>statement label</span>, can be used in <span>goto</span> statements
+    		</p>
+    	
+    		<h3>Identifier naming rules</h3>
+
+    		<p>
+    		As a reminder, the name of a variable (or function, type, or other kind of item) is called an identifier. C++ gives you a lot of flexibility to name identifiers as you wish. However, there are a few rules that must be followed when naming identifiers:
+    		</p>
+
+    		<ul>
+    			<li>
+    				The identifier can not be a keyword. Keywords are reserved.
+    			</li>
+
+    			<li>
+    				The identifier can only be composed of letters (lower or upper case), numbers, and the underscore character. That means the name can not contain symbols (except the underscore) nor whitespace (spaces or tabs).
+    			</li>
+
+    			<li>
+    				The identifier must begin with a letter (lower or upper case) or an underscore. It can not start with a number.C++ is case sensitive, and thus distinguishes between lower and upper case letters. <span>nvalue</span> is different from <span>nValue</span> which is again different from <span>NVALUE</span>. 
+    			</li>
+    		</ul>
+   		</article>
+	</section>
+
+
+
+	<section class="main-section" id="Conditional_Statements_and_Operators">
+    	<header><h2>Conditional Statements and Operators</h2></header>
+    	<article>
+    		<p>Conditions and statements are used to make decisions based on a given set of conditions or scenarios. If the condition evaluates to be True, a set of statements is executed, otherwise another set of statements is executed.
+    		C++ supports the usual logical conditions from mathematics:
+    		</p>
+    		
+    		<ul>
+    			<li>
+    				Less than: a <span>&lt;</span> b
+    			</li>
+    			
+    			<li>
+    				Less than or equal to: a <span>&lt;=</span> b
+    			</li>
+
+    			<li>
+    				Greater than: a <span>&gt;</span> b
+    			</li>
+
+    			<li>
+    				Greater than or equal to: a <span>&gt;=</span> b
+    			</li>
+
+    			<li>
+    				Equal to a <span>==</span> b
+    			</li>
+
+    			<li>
+    				Not Equal to: a <span>!=</span> b
+    			</li>
+    		</ul>
+    
+    
+    		<h3>C++ has the following conditional statements:</h3>
+
+    		<ul>
+    			<li>
+    			<strong>if</strong> to specify a block of code to be executed, if a specified condition is true</li>
+    			
+    			<li>
+    			<strong>else</strong> to specify a block of code to be executed, if the same condition is false
+    			</li>
+    			
+    			<li>
+    			<strong>else if</strong> to specify a new condition to test, if the first condition is false
+    			</li>
+    			
+    			<li>
+    			<strong>switch</strong> to specify many alternative blocks of code to be executed
+    			</li>
+    		</ul>
+
+
+
+    		<h3>C++ Operators</h3>
+    		<p>Operators are used to perform operations on variables and values.
+    		</p>
+    		<ul>
+    			<li>
+    			<strong>Addition Operator</strong>(<span>+</span>) - Adds together two values - Eg: <span>x + y</span>
+    			</li>
+
+    			<li>
+    			<strong>Subtraction Operator</strong>(<span>-</span>) - It Subtracts one value from another - Eg: <span>x - y</span>
+    			</li>
+
+    			<li><strong>Multiplication Operator</strong>(<span>*</span>) - It Multiplies two values - Eg: <span>x * y</span>
+    			</li>
+
+    			<li><strong>Division Operator</strong>(<span>/</span>) - It Divides one value by another - Eg: <span>x / y</span>
+    			</li>
+
+    			<li><strong>Modulus Operator</strong>(<span>%</span>) - It Returns the division remainder - Eg: <span>x % y</span>
+    			</li>
+
+    			<li><strong>Increment Operator</strong>(<span>++</span>) - It Increases the value of a variable by 1 - Eg: <span>++x</span>
+    			</li>
+
+    			<li><strong>Decrement Operator</strong>(<span>--</span>) - It Decreases the value of a variable by 1 - Eg: <span>--x</span>
+    			</li>
+    		</ul>
+		</article>
+	</section>
+
+	<section class="main-section" id="Loop">
+    	<header><h2>Loop</h2></header>
+    	<article>
+    		<p>Loops can execute a block of code repeatedly until a specified condition is reached.Loops are handy because they save time, reduce errors, and they make code more readable.
+    		</p>
+
+    		<code>
+			// C++ program to illustrate need of loops
+			<span class="sp5">#include</span> &lt;iostream&gt;
+			using namespace std;
+
+			<span class="sp4">int</span> <span class="sp6">main()</span>
+			{
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				cout &lt;&lt; "Hello World\n";
+				<span class="sp6">return</span> 0;
+			}
+			</code>
+
+			<p>The Output of the above code wil be:</p>
+
+			<code class="output1">
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			</code>
+
+			<p>Instead of writing the output for 10 times, by using a Loop, the statement needs to be written only once and it will be executed 10 times as shown below.In computer programming, a loop is a sequence of instructions that is repeated until a certain condition is reached.
+			</p>
+
+			<code>
+    		// C++ program to illustrate for loop
+    		<span class="sp5">#include</span> &lt;iostream&gt;
+    		using namespace std;
+
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			for (<span class="sp4">int</span> <span class="sp1">i = 1</span>; <span class="sp2">i &lt;= 10</span>; <span class="sp3">i++</span>)
+    			{
+    				cout &lt;&lt; "Hello World\n";
+    			}
+    			<span class="sp6">return</span> 0;
+    		}
+    		</code>
+
+    		<p>
+			The above code using loop will produce the same output as the previously used one without it:
+			</p>
+
+			<code class="output1">
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			</code>
+
+
+			<h3>Loops Based on Execution Style</h3>
+
+			<p>There are mainly two types of loops:</p>
+
+			<ul>
+				<li>
+    			<strong>Entry Controlled loops</strong>: In this type of loops the test condition is tested before entering the loop body. <span>For Loop</span> and <span>While Loop</span> are entry controlled loops.
+    			</li>
+
+    			<li>
+    			<strong>Exit Controlled Loops</strong>: In this type of loops the test condition is tested or evaluated at the end of loop body. Therefore, the loop body will execute atleast once, irrespective of whether the test condition is true or false. <span>do–while</span> loop is exit controlled loop.
+    			</li>
+    		</ul>
+
+    		<h3><strong>for</strong> loop</h3>
+
+    		<p>
+    		A <span>for loop</span> is a repetition control structure which allows us to write a loop that is executed a specific number of times. The loop enables us to perform n number of steps together in one line.
+    		Syntax:
+    		</p>
+
+    		<code>
+    		for (<span class="sp1">initialization expr</span>; <span class="sp2">test expr</span>; <span class="sp3">update expr</span>)
+    		{
+    			// body of the loop
+    			// statements we want to execute
+    		}
+    		</code>
+
+    		<p>
+    		In  a <span>for loop</span>, a loop variable is used to control the loop. First initialize this loop variable to some value, then check whether this variable is less than or greater than counter value. If statement is true, then loop body is executed and loop variable gets updated . Steps are repeated till exit condition comes.
+    		</p>
+
+    		<ul>
+				<li>
+				<span>Initialization Expression</span>: In this expression we have to initialize the loop counter to some value. for example: <span>int i=1;</span>
+				</li>
+
+				<li>
+				<span>Test Expression</span>: In this expression we have to test the condition. If the condition evaluates to true then we will execute the body of loop and go to update expression otherwise we will exit from the for loop. For example: <span>i &lt;= 10;</span>
+				</li>
+
+				<li>
+				<span>Update Expression</span>: After executing loop body this expression increments/decrements the loop variable by some value. for example: <span>i++;</span>
+				</li>
+			</ul>
+
+
+			<code>
+			// C++ program to illustrate for loop
+			<span class="sp5">#include</span> &lt;iostream&gt;
+			using namespace std;
+
+			<span class="sp4">int</span> <span class="sp6">main()</span>
+			{
+				for (<span class="sp4">int</span> <span class="sp1">i = 1</span>; <span>i &lt;= 5</span>; <span class="sp3">i++</span>)
+				{
+					cout &lt;&lt; "Hello World\n";
+				}
+				<span class="sp6">return</span> 0;
+			}
+			</code>
+
+			<p>Output:</p>
+
+			<code class="output1">
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			Hello World
+			</code>
+
+			<h3><strong>While</strong> Loop</h3>
+
+			<p>
+			<span>while loops</span> are used in situations where we do not know the exact number of iterations of loop beforehand. The loop execution is terminated on the basis of test condition.
+			Syntax:
+			</p>
+
+
+			<code>
+    		<span class="sp1">initialization expression</span>;
+    		while (<span class="sp2">test_expression</span>)
+    		{
+    			// statements
+    			<span class="sp3">update_expression</span>;
+    		}
+    		</code>
+
+
+    		<p>
+    		We have already stated that a loop is mainly consisted of three statements – <span>initialization expression</span>, <span>test expression</span>, <span>update expression</span>. The syntax of the three loops – For, while and do while mainly differs on the placement of these three statements.
+    		</p>
+
+    		<code>
+    		// C++ program to illustrate while loop
+    		<span class="sp5">#include</span> &lt;iostream&gt;
+    		using namespace std;
+
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			// initialization expression
+    			<span class="sp1">int i = 1</span>;
+    			// test expression
+    			<span class="sp2">while (i &lt; 6)</span>
+    			{
+    				cout &lt;&lt; "Hello World\n";
+    				// update expression
+    				<span class="sp3">i++</span>;
+    			}
+    			<span class="sp6">return</span> 0;
+    		}
+    		</code>
+
+    		<p>Output:</p>
+
+    		<code class="output1">
+    		Hello World
+    		Hello World
+    		Hello World
+    		Hello World
+    		Hello World
+    		</code>
+
+    		<h3><strong>do while</strong> loop</h3>
+
+    		<p>
+    		In <span>do-while loops</span> also the loop execution is terminated on the basis of test condition. The main difference between <span>do-while loop</span> and <span>while loop</span> is in <span>do-while loop</span> the condition is tested at the end of loop body, i.e <span>do-while loop</span> is exit controlled whereas the other two loops are entry controlled loops.
+    		</p>
+    		<p><strong>Note</strong>: In <span>do-while loop</span> the loop body will execute at least once irrespective of test condition.Syntax:
+    		</p>
+
+
+    		<code>
+    		<span class="sp1">initialization expression</span>;
+    		do
+    		{
+    			// statements
+    			<span class="sp3">update_expression</span>;
+    		}
+    		while (<span class="sp2">test_expression</span>);
+    		</code>
+
+
+    		<p>An Example for <span>do-while loop</span> is given below:</p>
+
+
+    		<code>
+    		// C++ program to illustrate do-while loop
+    		<span class="sp5">#include</span> &lt;iostream&gt;
+    		using namespace std;
+
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			<span class="sp1">int i = 2</span>; // Initialization expression
+    			do
+    			{
+    				// loop body
+    				cout &lt;&lt; "Hello World\n";
+    				<span class="sp3">i++</span>; // update expression
+    			}
+    			while (<span class="sp2">i &lt; 1</span>); // test expression
+    			return 0;
+    		}
+    		</code>
+
+    		<p>Output:</p>
+
+    		<code class="output1">
+    		Hello World
+    		</code>
+
+
+    		<p>
+    		In the above program the test condition (<span>i&lt;1</span>) evaluates to false. But still as the loop is exit – controlled the loop body will execute once.
+    		</p>
+
+
+    		<h3>Infinite Loop</h3>
+    		<p>
+    		An infinite loop (sometimes called an endless loop) is a piece of coding that lacks a functional exit so that it repeats indefinitely. An infinite loop occurs when a condition always evaluates to true. Usually, this is an error.
+    		</p>
+
+    		<p>Example for an <span>Infinite loop</span> using <span>for loop</span></p>
+
+
+    		<code>
+    		// C++ program to demonstrate infinite loops
+    		// using for loop
+    		<span class="sp5">#include</span> &lt;iostream&gt;
+    		using namespace std;
+
+    		<span class="sp4">int</span> <span class="sp6">main ()</span>
+    		{
+    			<span class="sp4">int</span> i;
+    			// This is an infinite for loop as the condition
+    			// expression is blank
+    			for ( ; ; )
+    			{
+    				cout &lt;&lt; "This loop will run forever.\n";
+    			} 
+  			}
+  			</code>
+
+
+  			<p>Example for an <span>Infinite loop</span> using <span>while loop</span></p>
+
+
+  			<code>
+  			// This is an infinite for loop as the condition
+  			// given in while loop will keep repeating infinitely
+  			<span class="sp5">#include</span> &lt;iostream&gt;
+    		using namespace std;
+
+    		<span class="sp4">int</span> <span class="sp6">main ()</span>
+    		{
+    			while (<span class="sp2">i != 0</span>)
+    			{
+    				<span class="sp3">i--</span> ;
+    				cout &lt;&lt; "This loop will run forever.\n";
+    			}
+    		}
+    		</code>
+
+
+    		<p>another example for an <span>Infinite loop</span> using <span>while loop</span></p>
+
+    		<code>
+  			// This is an infinite for loop as the condition
+  			// given in while loop is "true"
+  			<span class="sp5">#include</span> &lt;iostream&gt;
+    		using namespace std;
+
+    		<span class="sp4">int</span> <span class="sp6">main ()</span>
+    		{
+    			while (<span class="sp2">true</span>)
+    			{
+    				cout &lt;&lt; "This loop will run forever.\n";
+    			}
+    		}
+    		</code>
+    	</article>
+    </section>
+
+
+    <section class="main-section" id="Functions">
+    	<header><h2>Functions</h2></header>
+    	<article>
+    		<p>A function is a set of statements that take inputs, do some specific computation and produces output.The idea is to put some commonly or repeatedly done task together and make a function so that instead of writing the same code again and again for different inputs, we can call the function.
+    		</p>
+
+    		<code>
+    		<span class="sp4">return_type</span> <span class="sp6">function_name</span>([ arg1_type arg1_name, ... ]) { code }
+    		</code>
+
+
+    		<p>Below is a simple C/C++ program to demonstrate functions.
+    		</p>
+
+
+    		<code>
+    		<span class="sp5">#include</span> &lt;iostream&gt;
+    		using namespace std;
+
+    		<span class="sp4">int</span> <span class="sp6">max</span>(<span class="sp4">int</span> x, <span class="sp4">int</span> y)
+    		{
+    			if (<span class="sp2">x &gt; y</span>)
+    			return x;
+    			else
+    			return y;
+    		}
+
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			<span class="sp4">int</span> <span class="sp1">a = 10</span>, <span class="sp1">b = 20</span>;
+    			// Calling above function to find max of 'a' and 'b'
+    			<span class="sp4">int</span> m = <span class="sp6">max</span>(<span class="sp4">a</span>, <span class="sp4">b</span>);
+    			cout &lt;&lt; "m is " &lt;&lt; m;
+    			return 0;
+    		}
+    		</code>
+
+    		<p>Output:</p>
+
+    		<code class="output1">
+    		m is 20
+    		</code>
+
+
+
+    		<h3>Need for functions</h3>
+
+    		<ul>
+    			<li>
+    			Functions help us in reducing code redundancy. If functionality is performed at multiple places in software, then rather than writing the same code, again and again, we create a function and call it everywhere. This also helps in maintenance as we have to change at one place if we make future changes to the functionality.
+    			</li>
+
+    			<li>
+    			Functions make code modular. Consider a big file having many lines of codes. It becomes really simple to read and use the code if the code is divided into functions.
+    			</li>
+
+    			<li>
+    			Functions provide abstraction. For example, we can use library functions without worrying about their internal working.
+    			</li>
+    		</ul>
+
+
+    		<h3>Creating a Function</h3>
+
+    		<p>C++ provides some pre-defined functions, such as <span class="sp6">main()</span>, which is used to execute code. But you can also create your own functions to perform certain actions.To create (often referred to as declare) a function, specify the name of the function, followed by parentheses <span>()</span>:
+    		</p>
+    		<p>Syntax is given below,</p>
+
+
+    		<code>
+    		<span class="sp4">void</span> <span class="sp6">myFunction()</span>
+    		{
+    			// code to be executed
+    		}
+    		</code>
+    		<h3>Calling a Function</h3>
+
+    		<ul>
+    			<li>
+    				Declared functions are not executed immediately. They are "saved for later use", and will be executed later, when they are called.
+    			</li>
+
+    			<li>
+    				To call a function, write the function's name followed by two parentheses <span>()</span> and a semicolon <span>;</span>
+    			</li>
+
+    			<li>
+    				In the following example, <span class="sp6">myFunction()</span> is used to print a text (the action), when it is called:
+    			</li>
+    		</ul>
+
+
+    		<code>
+    		Inside <span class="sp6">main</span>, call <span class="sp6">myFunction()</span>:
+    		// Create a function
+    		<span class="sp4">void</span> <span class="sp6">myFunction()</span>
+    		{
+    			cout &lt;&lt; "I just got executed!";
+    		}
+
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			<span class="sp6">myFunction()</span>; // call the function
+    			return 0;
+    		}
+    		</code>
+
+    		<p>Output:</p>
+
+    		<code class="output1">
+    		I just got executed!
+    		</code>
+
+
+    		<p>
+    		A function can also be called multiple times:
+    		</p>
+
+
+    		<code>
+    		<span class="sp4">void</span> <span class="sp6">myFunction()</span>
+    		{
+    			cout &lt;&lt; "I just got executed!\n";
+    		}
+
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			<span class="sp6">myFunction()</span>;
+    			<span class="sp6">myFunction()</span>;
+    			<span class="sp6">myFunction()</span>;
+    			return 0;
+    		}
+    		</code>
+
+    		<p>Output:</p>
+
+
+    		<code class="output1">
+    		I just got executed!
+    		I just got executed!
+    		I just got executed!
+    		</code>
+
+
+    		<h3>Function Declaration and Definition</h3>
+
+    		<p>A C++ function consist of two parts:</p>
+
+    		<ul>
+    			<li>
+    			<strong>Declaration</strong>: the function's name, return type, and parameters (if any)
+    			</li>
+
+    			<li>
+    			<strong>Definition</strong>: the body of the function (code to be executed)
+    			</li>
+    		</ul>
+
+    		<p>Syntax: </p>
+
+
+    		<code>
+    		<span class="sp4">void</span> <span class="sp6">myFunction()</span>
+    		{
+    			// declaration
+    			// the body of the function
+    			(definition)
+    		}
+    		</code>
+
+    		<p>
+    		<strong>Note</strong>: If a user-defined function, such as <span class="sp6">myFunction()</span> is declared after the <span class="sp6">main()</span> function, an error will occur. It is because C++ works from top to bottom; which means that if the function is not declared above <span class="sp6">main()</span>, the program is unaware of it.Example:
+    		</p>
+
+    		<code>
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			<span class="sp6">myFunction()</span>;
+    			return 0;
+    		}
+
+    		<span class="sp4">void</span> <span class="sp6">myFunction()</span>
+    		{
+    			cout &lt;&lt; "I just got executed!";
+    		}
+    		</code>
+
+
+    		<p>The Output of the above code will be:</p>
+
+    		<code class="output1">
+    		Error
+    		</code>
+
+
+    		<p>
+    		However, it is possible to separate the declaration and the definition of the function - for code optimization.You will often see C++ programs that have function declaration above <span>main()</span>, and function definition below <span>main()</span>. This will make the code better organized and easier to read.Example:
+    		</p>
+
+
+    		<code>
+    		// Function declaration
+    		<span class="sp4">void</span> myFunction();
+    		// The main method
+    		<span class="sp4">int</span> <span class="sp6">main()</span>
+    		{
+    			<span class="sp6">myFunction()</span>;  // call the function
+    			return 0;
+    		}
+
+    		// Function definition
+    		<span class="sp4">void</span> <span class="sp6">myFunction()</span>
+    		{
+    			cout &lt;&lt; "I just got executed!";
+    		}
+    		</code>
+    	</article>
+    </section>
+
+
+
+    <section class="main-section" id="Reference">
+    	<header><h2>Reference</h2></header>
+    		<p>All the documentation in this page is taken from</p>
+    		<ul>
+    			<li><a href="https://www.w3schools.com/cpp/default.asp">W3Schools</a></li>
+				<li><a href="https://www.learncpp.com">Learn C++</a></li>
+				<li><a href="https://en.cppreference.com">cppreference</a></li>
+				<li><a href="https://www.geeksforgeeks.org/c-plus-plus/?ref=shm">GeekforGeeks</a></li>
+			</ul>
+	</section>
+
+</main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</body>
+</html>
+
