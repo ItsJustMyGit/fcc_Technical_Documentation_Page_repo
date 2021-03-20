@@ -42,7 +42,7 @@ header {
 
 
 #navbar ul {
-  height: 100%;
+  height: 100%/*90%*/;
   padding: 0;
 }
 
@@ -70,9 +70,17 @@ header {
 	color: #f99fc0;
 }
 
+
 strong{
 	color: #5858ca;
 }
+
+li strong a{
+	color: #5858ca;
+	text-decoration: none;
+}
+
+
 
 span{
 	color: #dc7226;
@@ -192,3 +200,4 @@ code {
     margin-top: 16em;
   }
 }
+
